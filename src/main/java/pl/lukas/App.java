@@ -1,5 +1,7 @@
 package pl.lukas;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 public class App {
 
     public static void main(String[] args) {
@@ -18,5 +20,9 @@ public class App {
 
         // STATIC FACTORY METHODS
         // from, of, valueOf, instanceOf
+
+        boolean isTrue = true;
+//        new Boolean(isTrue); // this same as below
+        Boolean.valueOf(isTrue);
     }
 }
