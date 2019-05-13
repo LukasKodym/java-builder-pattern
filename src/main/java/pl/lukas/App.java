@@ -4,8 +4,9 @@ public class App {
 
     public static void main(String[] args) {
 
-
-//        new House().setAddress("ul. Kursowa").setFloorsNumber(2).setDoorsNumber(3).setWindowsNumber(12).createHouse();
+        // BUILDER
+        // new House("ul. Kursowa 2", 2, 3, 12);
+        // new House().setAddress("ul. Kursowa").setFloorsNumber(2).setDoorsNumber(3).setWindowsNumber(12).createHouse();
         // new House .setAddress .setFloorNumber .setDoorsNumber . setWindowNumber
 
         House house = new House.HouseBuilder()
@@ -14,5 +15,8 @@ public class App {
                 .setFloorsNumber(5)
                 .setWindowsNumber(12)
                 .build();
+
+        // STATIC FACTORY METHODS
+        // from, of, valueOf, instanceOf
     }
 }
