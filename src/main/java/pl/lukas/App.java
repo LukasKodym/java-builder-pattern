@@ -4,7 +4,14 @@ public class App {
 
     public static void main(String[] args) {
 
-        new House("ul. Kursowa",2,3,12);
+        new HouseBuilder().setAddress("ul. Kursowa").setFloorsNumber(2).setDoorsNumber(3).setWindowsNumber(12).createHouse();
         // new House .setAddress .setFloorNumber .setDoorsNumber . setWindowNumber
+
+        House house = new HouseBuilder().createHouse()
+                .setAddress("ul. Szkolna 2")
+                .setDoorsNumber(2)
+                .setFloorsNumber(5)
+                .setWindowsNumber(12)
+                .createHouse();
     }
 }
