@@ -1,6 +1,7 @@
 package pl.lukas;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
+import pl.lukas.models.FamilyHouse;
 
 public class App {
 
@@ -24,5 +25,7 @@ public class App {
         boolean isTrue = true;
 //        new Boolean(isTrue); // this same as below
         Boolean.valueOf(isTrue);
+
+        FamilyHouse familyHouse = FamilyHouse.from(house);
     }
 }

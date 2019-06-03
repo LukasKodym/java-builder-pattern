@@ -14,6 +14,7 @@ public class House {
         this.windowsNumber = windowsNumber;
     }
 
+
     public static class HouseBuilder {
         private String address;
         private Integer floorsNumber;
@@ -43,5 +44,21 @@ public class House {
         public House build() {
             return new House(address, floorsNumber, doorsNumber, windowsNumber);
         }
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public Integer getFloorsNumber() {
+        return floorsNumber;
+    }
+
+    public Integer getDoorsNumber() {
+        return doorsNumber;
+    }
+
+    public Integer getWindowsNumber() {
+        return windowsNumber;
     }
 }
