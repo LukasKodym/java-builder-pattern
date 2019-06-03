@@ -14,7 +14,6 @@ public class House {
         this.windowsNumber = windowsNumber;
     }
 
-
     public static class HouseBuilder {
         private String address;
         private Integer floorsNumber;
