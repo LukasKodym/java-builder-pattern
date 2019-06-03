@@ -2,15 +2,19 @@ package pl.lukas;
 
 public class Logger {
 
-    private Logger instance;
+    private static Logger instance;
     private Logger(){}
 
-    public Logger getInstance() {
-        if (this.instance == null) {
+    public static Logger getInstance() {
+        if (Logger.instance == null) {
             instance = new Logger();
             return instance;
         } else {
             return instance;
         }
+    }
+
+    public void logYoConsole() {
+        //
     }
 }
